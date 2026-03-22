@@ -146,6 +146,11 @@ nav ul a:hover { color: var(--primary); }
   color: var(--gray);
 }
 .hero .affiliations a { color: var(--accent); font-weight: 500; }
+.hero .hero-note {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
 .hero .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .btn {
   display: inline-block;
