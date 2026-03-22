@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IOL Lab — Interactive Optimization &amp; Learning</title>
+  <meta name="description" content="The Interactive Optimization and Learning Lab at Zuse Institute Berlin and TU Berlin, led by Sebastian Pokutta.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo"><span>IOL</span> Lab</a>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#software">Software</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Interactive Optimization<br>&amp; <span>Learning</span></h1>
+    <p class="subtitle">
+      We use computers to learn from data and make better decisions &mdash; developing new optimization and learning algorithms, integrating learning with decision-making, and deploying AI systems for real-world impact.
+    </p>
+    <div class="affiliations">
+      <a href="https://www.zib.de" target="_blank">Zuse Institute Berlin</a>
+      <a href="https://www.tu.berlin" target="_blank">TU Berlin</a>
+      <a href="https://mathplus.de" target="_blank">MATH+</a>
+    </div>
+    <div class="cta-row">
+      <a href="https://iol.zib.de" class="btn btn-primary" target="_blank">Visit iol.zib.de</a>
+      <a href="https://github.com/ZIB-IOL" class="btn btn-outline" target="_blank">GitHub</a>
+      <a href="https://www.pokutta.com/blog" class="btn btn-outline" target="_blank">Blog</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <div class="section-inner">
+    <span class="section-label">Research</span>
+    <h2 class="section-title">What We Work On</h2>
+    <p class="section-desc">
+      Our research spans optimization theory, algorithm design, and machine-learning applications.
+    </p>
+    <div class="card-grid">
+      <a href="https://iol.zib.de/research/iol-opt.html" class="card card-bear" style="--bear: url('images/thrusts/opt.png')" target="_blank">
+        <div class="card-tag">iol.OPT</div>
+        <h3>Continuous Optimization</h3>
+        <p>Conditional gradient algorithms, non-smooth and distributed optimization, accelerated methods, and online learning.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-int.html" class="card card-bear" style="--bear: url('images/thrusts/int.png')" target="_blank">
+        <div class="card-tag">iol.INT</div>
+        <h3>Integer Optimization</h3>
+        <p>Mixed-integer (nonlinear) programming, GPU-accelerated techniques, cutting planes, branch-and-bound, and the SCIP Optimization Suite.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-oml.html" class="card card-bear" style="--bear: url('images/thrusts/oml.png')" target="_blank">
+        <div class="card-tag">iol.OML</div>
+        <h3>Optimization &amp; Learning</h3>
+        <p>First-order methods, convex and min-max optimization, and optimization for deep learning.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-learn.html" class="card card-bear" style="--bear: url('images/thrusts/learn.png')" target="_blank">
+        <div class="card-tag">iol.LEARN</div>
+        <h3>Deep Learning</h3>
+        <p>Model compression, training efficiency, decentralized training, robustness, XAI, AI4Science, and Agentic AI.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-comp.html" class="card card-bear" style="--bear: url('images/thrusts/comp.png')" target="_blank">
+        <div class="card-tag">iol.COMP</div>
+        <h3>Computational Mathematics</h3>
+        <p>Computer-assisted proofs, flag algebras in combinatorics, interactive theorem provers, and learning-based heuristics.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-quant.html" class="card card-bear" style="--bear: url('images/thrusts/quant.png')" target="_blank">
+        <div class="card-tag">iol.QUANT</div>
+        <h3>Quantum Mathematics</h3>
+        <p>Tensor decompositions, operator theory, numerical PDE methods, kernel-based techniques, and Bell nonlocality.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-human.html" class="card card-bear" style="--bear: url('images/thrusts/human.png')" target="_blank">
+        <div class="card-tag">iol.HUMAN</div>
+        <h3>Humans &amp; AI</h3>
+        <p>Human-AI interaction, AI for learning and education, decision-making with AI, and AI in AR/VR.</p>
+      </a>
+      <a href="https://iol.zib.de/research/iol-indai.html" class="card card-bear" style="--bear: url('images/thrusts/indai.png')" target="_blank">
+        <div class="card-tag">iol.INDAI</div>
+        <h3>Industrial AI</h3>
+        <p>Autonomous systems, AI agents, cyber-physical systems, smart manufacturing, mobility, and digital twins.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOFTWARE ============ -->
+<section id="software">
+  <div class="section-inner">
+    <span class="section-label">Open Source</span>
+    <h2 class="section-title">Software</h2>
+    <p class="section-desc">
+      We maintain research software used across academia and industry.
+    </p>
+    <h3 class="software-heading">IOL Packages</h3>
+    <div class="software-grid">
+      <a href="https://github.com/ZIB-IOL/FrankWolfe.jl" class="repo-card" target="_blank">
+        <div class="repo-icon julia">jl</div>
+        <div class="repo-info">
+          <h4>FrankWolfe.jl</h4>
+          <p>Conditional gradient algorithms in Julia</p>
+        </div>
+      </a>
+      <a href="https://github.com/ZIB-IOL/Boscia.jl" class="repo-card" target="_blank">
+        <div class="repo-icon julia">jl</div>
+        <div class="repo-info">
+          <h4>Boscia.jl</h4>
+          <p>Branch-and-bound with Frank&ndash;Wolfe</p>
+        </div>
+      </a>
+      <a href="https://github.com/ZIB-IOL/BellPolytopes.jl" class="repo-card" target="_blank">
+        <div class="repo-icon julia">jl</div>
+        <div class="repo-info">
+          <h4>BellPolytopes.jl</h4>
+          <p>Local polytope membership &amp; Bell inequalities</p>
+        </div>
+      </a>
+    </div>
+
+    <h3 class="software-heading" style="margin-top: 2.5rem;">SCIP Optimization Suite</h3>
+    <p class="section-desc" style="margin-bottom: 1.5rem;">
+      We co-develop the <a href="https://www.scipopt.org" target="_blank">SCIP Optimization Suite</a> &mdash; one of the fastest academically developed MIP solvers.
+    </p>
+    <div class="software-grid">
+      <a href="https://github.com/scipopt/scip" class="repo-card" target="_blank">
+        <div class="repo-icon scip">C</div>
+        <div class="repo-info">
+          <h4>SCIP</h4>
+          <p>Mixed integer programming solver</p>
+        </div>
+      </a>
+      <a href="https://github.com/scipopt/soplex" class="repo-card" target="_blank">
+        <div class="repo-icon scip">C++</div>
+        <div class="repo-info">
+          <h4>SoPlex</h4>
+          <p>Linear programming solver</p>
+        </div>
+      </a>
+      <a href="https://github.com/scipopt/papilo" class="repo-card" target="_blank">
+        <div class="repo-icon scip">C++</div>
+        <div class="repo-info">
+          <h4>PaPILO</h4>
+          <p>Parallel presolve for integer and linear optimization</p>
+        </div>
+      </a>
+      <a href="https://github.com/scipopt/PySCIPOpt" class="repo-card" target="_blank">
+        <div class="repo-icon python">py</div>
+        <div class="repo-info">
+          <h4>PySCIPOpt</h4>
+          <p>Python interface for SCIP</p>
+        </div>
+      </a>
+      <a href="https://github.com/scipopt/SCIP.jl" class="repo-card" target="_blank">
+        <div class="repo-icon julia">jl</div>
+        <div class="repo-info">
+          <h4>SCIP.jl</h4>
+          <p>Julia interface for SCIP</p>
+        </div>
+      </a>
+      <a href="https://github.com/scipopt/russcip" class="repo-card" target="_blank">
+        <div class="repo-icon rust">rs</div>
+        <div class="repo-info">
+          <h4>russcip</h4>
+          <p>Rust interface for SCIP</p>
+        </div>
+      </a>
+    </div>
+    <p style="margin-top: 1.5rem;">
+      <a href="https://github.com/ZIB-IOL" target="_blank" style="font-weight: 600; font-size: 0.9rem;">
+        View all IOL repositories &rarr;
+      </a>
+      &nbsp;&nbsp;
+      <a href="https://github.com/scipopt" target="_blank" style="font-weight: 600; font-size: 0.9rem;">
+        View all SCIP repositories &rarr;
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section id="blog">
+  <div class="section-inner">
+    <span class="section-label">Blog</span>
+    <h2 class="section-title">Latest Posts</h2>
+    <p class="section-desc">
+      From <a href="https://www.pokutta.com/blog" target="_blank"><em>One Trivial Observation at a Time</em></a> &mdash; mathematics, optimization, machine learning, and AI.
+    </p>
+    <div id="blog-feed" class="blog-grid">
+      <p class="blog-loading">Loading posts&hellip;</p>
+    </div>
+    <p style="margin-top: 1.5rem;">
+      <a href="https://www.pokutta.com/blog" target="_blank" style="font-weight: 600; font-size: 0.9rem;">
+        Read all posts &rarr;
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section id="team">
+  <div class="section-inner">
+    <span class="section-label">People</span>
+    <h2 class="section-title">Our Team</h2>
+    <div class="numbers" id="org-stats">
+      <div class="num"><strong id="stat-members">&hellip;</strong><span>GitHub Members</span></div>
+      <div class="num"><strong id="stat-repos">&hellip;</strong><span>Repositories</span></div>
+    </div>
+    <p class="section-desc">
+      A diverse group of mathematicians, computer scientists, and engineers working together in Berlin.
+    </p>
+    <div class="cta-row" style="justify-content: flex-start;">
+      <a href="https://iol.zib.de/team" class="btn btn-outline" target="_blank">Meet the team &rarr;</a>
+      <a href="https://iol.zib.de/jobs" class="btn btn-primary" target="_blank">Join us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER / CONTACT ============ -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">IOL Lab</div>
+      <p>This is our GitHub landing page. Visit <a href="https://iol.zib.de" target="_blank">iol.zib.de</a> for full information.</p>
+      <div class="footer-links" style="margin-top: 0.8rem;">
+        <a href="https://iol.zib.de" target="_blank">Website</a>
+        <a href="https://github.com/ZIB-IOL" target="_blank">GitHub</a>
+        <a href="https://www.pokutta.com/blog" target="_blank">Blog</a>
+        <a href="https://iol.zib.de/seminar" target="_blank">Seminar</a>
+        <a href="https://iol.zib.de/imprint" target="_blank">Imprint</a>
+      </div>
+    </div>
+    <div class="addresses">
+      <div>
+        <strong style="color: rgba(255,255,255,0.85);">Zuse Institute Berlin</strong><br>
+        Takustra&szlig;e 7<br>
+        14195 Berlin, Germany
+      </div>
+      <div>
+        <strong style="color: rgba(255,255,255,0.85);">TU Berlin</strong><br>
+        Stra&szlig;e des 17. Juni 136<br>
+        10587 Berlin, Germany
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var container = document.getElementById('blog-feed');
+  fetch('blog-feed.json')
+    .then(function (res) { return res.json(); })
+    .then(function (posts) {
+      var html = '';
+      for (var i = 0; i < posts.length; i++) {
+        var p = posts[i];
+        var d = new Date(p.date + 'T00:00:00');
+        var date = d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        html += '<a href="' + p.link + '" class="blog-post" target="_blank">'
+          + '<span class="blog-date">' + date + '</span>'
+          + '<h4>' + p.title + '</h4>'
+          + '<p>' + p.summary + '</p>'
+          + '</a>';
+      }
+      container.innerHTML = html;
+    })
+    .catch(function () {
+      container.innerHTML = '<p>Could not load posts. <a href="https://www.pokutta.com/blog" target="_blank">Visit the blog directly &rarr;</a></p>';
+    });
+
+  // Org stats
+  fetch('org-stats.json')
+    .then(function (res) { return res.json(); })
+    .then(function (s) {
+      document.getElementById('stat-members').textContent = s.members;
+      document.getElementById('stat-repos').textContent = s.repos;
+    })
+    .catch(function () {});
+})();
+</script>
+</body>
+</html>

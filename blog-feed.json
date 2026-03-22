@@ -1,0 +1,32 @@
+[
+  {
+    "title": "The Agentic Researcher",
+    "link": "http://www.pokutta.com/blog/agentic-researcher/",
+    "summary": "TL;DR: This is a summary of our recent paper The Agentic Researcher: A Practical Guide to AI-Assisted Research in Mathematics and Machine Learning by Max Zimmer, Nico Pelleriti, Christophe Roux, and\u2026",
+    "date": "2026-03-18"
+  },
+  {
+    "title": "The Box You Can\u2019t Open Twice: Newcomb\u2019s Paradox Through Four Mathematical Lenses",
+    "link": "http://www.pokutta.com/blog/newcomb-four-lenses/",
+    "summary": "TL;DR: Newcomb\u2019s paradox \u2014 should you take one box or two? \u2014 splits rational decision-makers almost evenly. There are four natural mathematical frameworks (causal inference, algorithmic\u2026",
+    "date": "2026-03-10"
+  },
+  {
+    "title": "Do LLM Outputs Mirror Their Internal Semantic Maps? A Large-Scale Behavioral Probing Study",
+    "link": "http://www.pokutta.com/blog/research/2026/03/06/neural-semantic-geometry.html",
+    "summary": "TL;DR: How faithfully does an LLM\u2019s text output reflect the semantic geometry encoded in its hidden states? Forced-choice behavioral probing recovers substantially more internal similarity structure\u2026",
+    "date": "2026-03-06"
+  },
+  {
+    "title": "Between Theory and Reality: How Schools Grapple with Heterogeneity and Where AI Fits",
+    "link": "http://www.pokutta.com/blog/research/2025/12/15/school-ai.html",
+    "summary": "TL;DR: Rising classroom heterogeneity and workload make AI in schools inevitable; with FACET we explore how evidence-based, teacher-centered AI can support meaningful differentiation and AI literacy\u2026",
+    "date": "2025-12-15"
+  },
+  {
+    "title": "SCIP Optimization Suite 10.0: Exact Solving, Better Decompositions, and a More Productive Ecosystem",
+    "link": "http://www.pokutta.com/blog/research/2025/12/02/scip-10.html",
+    "summary": "TL;DR: SCIP Optimization Suite 10.0 brings a numerically exact solving mode for rational MILPs, noticeable performance gains for MILP/MINLP, stronger presolving and symmetry handling, better\u2026",
+    "date": "2025-12-02"
+  }
+]
