@@ -1,0 +1,100 @@
+name: Fetch blog feed and org stats
+
+on:
+  schedule:
+    - cron: '17 6 * * *'   # daily at 06:17 UTC
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and convert Atom feed to JSON
+        run: |
+          python3 - <<'PYEOF'
+          import urllib.request, xml.etree.ElementTree as ET, json, re, html
+
+          FEED = 'https://www.pokutta.com/blog/feed.xml'
+          MAX  = 5
+          NS   = {'a': 'http://www.w3.org/2005/Atom'}
+
+          data = urllib.request.urlopen(FEED).read()
+          root = ET.fromstring(data)
+          posts = []
+          for entry in root.findall('a:entry', NS)[:MAX]:
+              title = entry.findtext('a:title', '', NS)
+              title = html.unescape(re.sub(r'<[^>]*>', '', title))
+              link  = ''
+              for l in entry.findall('a:link', NS):
+                  if l.get('rel', 'alternate') == 'alternate':
+                      link = l.get('href', '')
+                      break
+              summary = entry.findtext('a:summary', '', NS)
+              summary = html.unescape(re.sub(r'<[^>]*>', '', summary)).strip()
+              if len(summary) > 200:
+                  summary = summary[:200].rsplit(' ', 1)[0] + '…'
+              date = entry.findtext('a:published', '', NS)[:10]  # YYYY-MM-DD
+              posts.append({'title': title, 'link': link, 'summary': summary, 'date': date})
+
+          with open('blog-feed.json', 'w') as f:
+              json.dump(posts, f, indent=2)
+          print(f'Wrote {len(posts)} posts to blog-feed.json')
+          PYEOF
+
+      - name: Fetch GitHub org stats
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PYEOF'
+          import urllib.request, json, os
+
+          TOKEN = os.environ.get('GH_TOKEN', '')
+          ORG   = 'ZIB-IOL'
+
+          def gh_get(path):
+              url = f'https://api.github.com/{path}'
+              req = urllib.request.Request(url)
+              if TOKEN:
+                  req.add_header('Authorization', f'Bearer {TOKEN}')
+              req.add_header('Accept', 'application/vnd.github+json')
+              return json.loads(urllib.request.urlopen(req).read())
+
+          # Paginate members
+          members = 0
+          page = 1
+          while True:
+              data = gh_get(f'orgs/{ORG}/members?per_page=100&page={page}')
+              members += len(data)
+              if len(data) < 100:
+                  break
+              page += 1
+
+          # Paginate repos
+          repos = 0
+          page = 1
+          while True:
+              data = gh_get(f'orgs/{ORG}/repos?per_page=100&page={page}')
+              repos += len(data)
+              if len(data) < 100:
+                  break
+              page += 1
+
+          stats = {'members': members, 'repos': repos}
+          with open('org-stats.json', 'w') as f:
+              json.dump(stats, f, indent=2)
+          print(f'Org stats: {stats}')
+          PYEOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog-feed.json org-stats.json
+          git diff --cached --quiet || git commit -m "Update blog feed and org stats" && git push
