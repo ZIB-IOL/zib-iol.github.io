@@ -1,5 +1,11 @@
 [
   {
+    "title": "An uncommon approach to lower bounds for Frank-Wolfe on strongly convex sets",
+    "link": "http://www.pokutta.com/blog/fw-lower-bounds-sc/",
+    "summary": "TL;DR: This is a short summary of our paper Lower Bounds for Frank-Wolfe on Strongly Convex Sets by Jannis Halbey, Daniel Deza, Max Zimmer, Christophe Roux, Bartolomeo Stellato, and Sebastian\u2026",
+    "date": "2026-04-13"
+  },
+  {
     "title": "The Agentic Researcher",
     "link": "http://www.pokutta.com/blog/agentic-researcher/",
     "summary": "TL;DR: This is a summary of our recent paper The Agentic Researcher: A Practical Guide to AI-Assisted Research in Mathematics and Machine Learning by Max Zimmer, Nico Pelleriti, Christophe Roux, and\u2026",
@@ -22,11 +28,5 @@
     "link": "http://www.pokutta.com/blog/research/2025/12/15/school-ai.html",
     "summary": "TL;DR: Rising classroom heterogeneity and workload make AI in schools inevitable; with FACET we explore how evidence-based, teacher-centered AI can support meaningful differentiation and AI literacy\u2026",
     "date": "2025-12-15"
-  },
-  {
-    "title": "SCIP Optimization Suite 10.0: Exact Solving, Better Decompositions, and a More Productive Ecosystem",
-    "link": "http://www.pokutta.com/blog/research/2025/12/02/scip-10.html",
-    "summary": "TL;DR: SCIP Optimization Suite 10.0 brings a numerically exact solving mode for rational MILPs, noticeable performance gains for MILP/MINLP, stronger presolving and symmetry handling, better\u2026",
-    "date": "2025-12-02"
   }
 ]
