@@ -1,5 +1,11 @@
 [
   {
+    "title": "The Hidden Cost of Tokenization",
+    "link": "http://www.pokutta.com/blog/hidden-cost-tokenization/",
+    "summary": "TL;DR: This is a short summary of our position paper The Hidden Cost of Tokenization: Why (most) Non-English Speakers Pay More for Less by Jennifer Haase and Sebastian Pokutta. The basic point is\u2026",
+    "date": "2026-05-14"
+  },
+  {
     "title": "Not every discovery needs an LLM",
     "link": "http://www.pokutta.com/blog/not-every-discovery-needs-an-llm/",
     "summary": "TL;DR: AI-driven scientific discovery with systems such as AlphaTensor, AlphaEvolve, etc is en vogue and we are also heavily invested in that space. However, these LLM- and RL-driven approaches,\u2026",
@@ -22,11 +28,5 @@
     "link": "http://www.pokutta.com/blog/newcomb-four-lenses/",
     "summary": "TL;DR: Newcomb\u2019s paradox \u2014 should you take one box or two? \u2014 splits rational decision-makers almost evenly. There are four natural mathematical frameworks (causal inference, algorithmic\u2026",
     "date": "2026-03-10"
-  },
-  {
-    "title": "Do LLM Outputs Mirror Their Internal Semantic Maps? A Large-Scale Behavioral Probing Study",
-    "link": "http://www.pokutta.com/blog/research/2026/03/06/neural-semantic-geometry.html",
-    "summary": "TL;DR: How faithfully does an LLM\u2019s text output reflect the semantic geometry encoded in its hidden states? Forced-choice behavioral probing recovers substantially more internal similarity structure\u2026",
-    "date": "2026-03-06"
   }
 ]
