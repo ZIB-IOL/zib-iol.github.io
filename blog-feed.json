@@ -1,5 +1,11 @@
 [
   {
+    "title": "The Zeroth World: A Seven-Year Update",
+    "link": "http://www.pokutta.com/blog/zeroth-world-update/",
+    "summary": "TL;DR: Seven years ago I argued that AI could enable a zeroth world: economies operating at a multiple of first-world productivity, the way the first world operates at a multiple of the third. The\u2026",
+    "date": "2026-06-12"
+  },
+  {
     "title": "The Hidden Cost of Tokenization",
     "link": "http://www.pokutta.com/blog/hidden-cost-tokenization/",
     "summary": "TL;DR: This is a short summary of our position paper The Hidden Cost of Tokenization: Why (most) Non-English Speakers Pay More for Less by Jennifer Haase and Sebastian Pokutta. The basic point is\u2026",
@@ -22,11 +28,5 @@
     "link": "http://www.pokutta.com/blog/agentic-researcher/",
     "summary": "TL;DR: This is a summary of our recent paper The Agentic Researcher: A Practical Guide to AI-Assisted Research in Mathematics and Machine Learning by Max Zimmer, Nico Pelleriti, Christophe Roux, and\u2026",
     "date": "2026-03-18"
-  },
-  {
-    "title": "The Box You Can\u2019t Open Twice: Newcomb\u2019s Paradox Through Four Mathematical Lenses",
-    "link": "http://www.pokutta.com/blog/newcomb-four-lenses/",
-    "summary": "TL;DR: Newcomb\u2019s paradox \u2014 should you take one box or two? \u2014 splits rational decision-makers almost evenly. There are four natural mathematical frameworks (causal inference, algorithmic\u2026",
-    "date": "2026-03-10"
   }
 ]
