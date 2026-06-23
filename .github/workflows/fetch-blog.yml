@@ -1,7 +1,6 @@
 name: Fetch blog feed and org stats
 
 on:
-  schedule:
   push:
     branches: [main]
   workflow_dispatch:
