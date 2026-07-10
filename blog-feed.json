@@ -1,5 +1,11 @@
 [
   {
+    "title": "Neural Concept Verifiers: Proving with Concepts, not Pixels",
+    "link": "http://www.pokutta.com/blog/neural-concept-verifier/",
+    "summary": "TL;DR: This is a short summary of our paper Neural Concept Verifier: Scaling Prover-Verifier Games via Concept Encodings by Berkant Turan, Suhrab Asadulla, David Steinmann, Kristian Kersting,\u2026",
+    "date": "2026-07-09"
+  },
+  {
     "title": "The Zeroth World: A Seven-Year Update",
     "link": "http://www.pokutta.com/blog/zeroth-world-update/",
     "summary": "TL;DR: Seven years ago I argued that AI could enable a zeroth world: economies operating at a multiple of first-world productivity, the way the first world operates at a multiple of the third. The\u2026",
@@ -22,11 +28,5 @@
     "link": "http://www.pokutta.com/blog/fw-lower-bounds-sc/",
     "summary": "TL;DR: This is a short summary of our paper Lower Bounds for Frank-Wolfe on Strongly Convex Sets by Jannis Halbey, Daniel Deza, Max Zimmer, Christophe Roux, Bartolomeo Stellato, and Sebastian\u2026",
     "date": "2026-04-13"
-  },
-  {
-    "title": "The Agentic Researcher",
-    "link": "http://www.pokutta.com/blog/agentic-researcher/",
-    "summary": "TL;DR: This is a summary of our recent paper The Agentic Researcher: A Practical Guide to AI-Assisted Research in Mathematics and Machine Learning by Max Zimmer, Nico Pelleriti, Christophe Roux, and\u2026",
-    "date": "2026-03-18"
   }
 ]
